@@ -5,8 +5,8 @@ use ort::session::{Session, SessionInputValue, SessionInputs, SessionOutputs};
 use ort::value::Value;
 use serde::Deserialize;
 
-mod audio;
-mod core;
+pub mod audio;
+pub mod core;
 pub use audio::synth;
 use core::{Audio, AudioInfo, AudioSamples, AudioStreamIterator, Phonemes, PiperModel};
 pub use core::{PiperAudioResult, PiperError, PiperResult};
